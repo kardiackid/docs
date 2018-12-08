@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gaslight Anthem Home Page</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+		<script type="text/javascript"></script>
+	</head>
+	<body id="body">
+		<nav class="menu-nav">
+			<ul class="main-menu-ul">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" id="links" aria-expanded="false">Links</a>
+					<ul class="sub-menu-ul" id="sub-menu-ul">
+						<li><a href="https://en.wikipedia.org/wiki/The_Gaslight_Anthem">History</a></li>
+						<li><a href="https://genius.com/artists/The-gaslight-anthem">Lyrics Page</a></li>
+						<li><a href="https://www.youtube.com/watch?v=oST77VRHXt0&list=PLi6635A0Z3UJbBzqY_RpNau2txAhJzHZO">Playlist</a></li>
+					</ul>
+				</li>
+				<li><a href="media.html">Media</a></li>
+			</ul>
+		</nav>
+		<script type="text/javascript">
+			var links = document.getElementById("links");
+			var submenuul = document.getElementById("sub-menu-ul");
+			
+			links.addEventListener("click", showmenu);
+			
+			function showmenu(e){
+				(e.target.getAttribute("aria-expanded") == "false")?(e.target.setAttribute("aria-expanded", "true")):(e.target.setAttribute("aria-expanded", "false"));
+				submenuul.classList.toggle("sub-menu-visible");
+				
+				//console.log(e.target.getAttribute("aria-expanded"));
+			}
+		</script>
+		<div class="container">
+			<div class="left-subsec">
+				G<br>
+				a<br>
+				s<br>
+				l<br>
+				i<br>
+				g<br>
+				h<br>
+				t<br>
+			</div>
+			<div class="main">
+				<img src="gaslight.jpg" alt="homeImage">
+			</div>
+			<div class="right-subsec">
+				A<br>
+				n<br>
+				t<br>
+				h<br>
+				e<br>
+				m<br>
+			</div>
+			<div class="footer">
+			<p> Created by Barton McCoy </p>
+			</div>
+		</div>
+	</body>
+</html>
+
+	

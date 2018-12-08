@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gaslight Anthem Media Page</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="media.css" />
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+		<script type="text/javascript"></script>
+	</head>
+	<body id="body">
+		<nav class="menu-nav">
+			<ul class="main-menu-ul">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" id="links" aria-expanded="false">Links</a>
+					<ul class="sub-menu-ul" id="sub-menu-ul">
+						<li><a href="https://en.wikipedia.org/wiki/The_Gaslight_Anthem">History</a></li>
+						<li><a href="https://genius.com/artists/The-gaslight-anthem">Lyrics Page</a></li>
+						<li><a href="https://www.youtube.com/watch?v=oST77VRHXt0&list=PLi6635A0Z3UJbBzqY_RpNau2txAhJzHZO">Playlist</a></li>
+					</ul>
+				</li>
+				<li><a href="media.html">Media</a></li>
+			</ul>
+		</nav>
+		<script type="text/javascript">
+			var links = document.getElementById("links");
+			var submenuul = document.getElementById("sub-menu-ul");
+			
+			links.addEventListener("click", showmenu);
+			
+			function showmenu(e){
+				(e.target.getAttribute("aria-expanded") == "false")?(e.target.setAttribute("aria-expanded", "true")):(e.target.setAttribute("aria-expanded", "false"));
+				submenuul.classList.toggle("sub-menu-visible");
+				
+				//console.log(e.target.getAttribute("aria-expanded"));
+			}
+		</script>
+		<div class="container">
+			<div class="left-subsec1">
+				<img src="gaslight4.JPEG" alt="mediaImage">
+			</div>
+			<div class="left-subsec2">
+				<audio controls>
+					<source src="Gaslight Anthem1.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+				</audio>
+				<audio controls>
+					<source src="The Gaslight Anthem  Bruce Springsteen The 59 Sound Live 2009 48000 1_01.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="main">
+				<video width="800" height="600" controls>
+					<source src="https://www.youtube.com/embed/U2wdaJuHpHQ" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="footer">
+			<p> Created by Barton McCoy </p>
+			</div>
+		</div>
+	</body>
+</html>
