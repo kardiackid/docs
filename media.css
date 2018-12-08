@@ -21,7 +21,7 @@
 	text-align: center;
 	padding: 25px 25px 25px;
 }
-.container > div > video {
+.container > div > iframe {
 	max-width: 100%;
 	height: auto;
 	position: center;
